@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Upload File</title>
+  </head>
+
+  <body class="body">
+    <div class="center">
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+          <div class="Fname">
+              <input type="text" id = "fname" name = "title" placeholder="Title" required>
+          </div>
+      
+          <div class="Lname">
+              <input type="text" id = "lname" name = "artist" placeholder="Artist" required>
+          </div>
+      
+          <div class="Email">
+              <input type="text" id = "email" name = "album" placeholder="Album" required>
+          </div>
+
+          <div class="File">
+              <input type="file" name="file">
+          </div>
+
+          <div class="Button">
+              <button type="submit">Submit</button>
+          </div>
+        </form>
+    </div>
+
+      
+    <!--<style>
+      .body
+      {
+          background-color: aquamarine;
+          position: center;
+      }
+
+      .center
+      {
+          width: 400px;
+          margin: auto;
+          background-color: rgb(238, 235, 231);
+          padding: 30px;
+          box-shadow: 10px 5px 5px rgb(53, 2, 2);
+          position: center;
+          
+      }
+
+      .Register
+      {
+          text-align: center;
+          font-family: 'Lucida Sans';
+          font-weight: bold;
+          font-size: 35px;
+      }
+
+      .Fname, .Lname, .Gender, .Email, .File
+      {
+          text-align: center;
+          margin-bottom: 2%;
+      }
+
+      .Button
+      {
+          position: absolute;
+          left: 800px;
+          border-color: black;
+          border-style: solid;
+          border-radius: 20%;
+      }
+    </style>-->
+  </body>
+</html>
