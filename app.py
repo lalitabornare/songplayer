@@ -54,7 +54,7 @@ def delete(song_id):
 def search():
     if request.method == 'POST':
         search_term = request.form['query']
-        songs = Song.query.filter(Song.title.ilike(f'%{search_term}%')).all()
+        songs = Song.query.filter(Song.title == search_term).all()
         return render_template('search.html', songs=songs)
     return redirect(url_for('index'))
 
